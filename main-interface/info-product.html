@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info-prduct</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/css/swiper-bundle.min.css">        
+    <link rel="stylesheet" href="main-interface.css">
+    <link rel="stylesheet" href="info.css">
+
+</head>
+<body style="background-color: #fff;">
+    
+    <!-- start navbar -->
+        
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>Galaxy</span><span>Market</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link " href="main-interface.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " href="#">Info Product</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <div class="info-product">
+        <div class="container-fluid">
+            <dvi class="row">
+                <div class="col-md-7">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../image/info1.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../image/info2.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../image/info3.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../image/info4.jpg" alt="">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h4 class="card-title">Women's Bag</h4>
+                                <h5 class="card-title">Adidas </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">1999/10/20</h6>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"> text about product </p>
+                            <p class="card-text">This is an exclusive product from<strong> Puma </strong>. The product is 100% guaranteed.
+                                    Exclusive leather bag in several colors .. order it now</p>
+                            <div class="rating">
+                                <ul id="stars" class="list-unstyled">
+                                    <li class="star" data-value='1' title="poor">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='2' title="bad">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='3' title="Good">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='4' title="Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='5' title="very Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                </ul>                  
+                            </div>
+                            <label>Number pieces</label>
+                            <input type="number" class="form-control" id="">
+                            </div>
+                            <div id="comment">
+                                <p class="Add-coment"> add a comment  </p>
+                                <div class="comment">
+                                    <textarea class="form-control" name="" id="" cols="2" rows="2"></textarea>
+                                    <input type="text" name="text" id="" class="form-control" placeholder="add-comment">
+                                </div>    
+                            </div>
+                          
+                            <div class="card-footer">
+                                <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                <a href="info-product.html" class="card-link info-product">Info</a>  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </dvi>
+        </div>
+    </div>
+
+  
+    <div class="container">
+        <div class="ifream">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="400" id="gmap-canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/swiper-bundle.min.js"></script>
+    <script src="../bootstrap 4/js/jquery.nicescroll.js"></script>
+    <script src="main-interface.js"></script>
+    <script src="info.js"></script>
+</body>
+</html>

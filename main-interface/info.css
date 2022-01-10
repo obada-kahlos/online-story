@@ -1,0 +1,23 @@
+.info-product{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.info-product .card{
+    padding-left: 0;
+}
+.info-product .card .card-header{
+    background-color: #fff;
+}
+.info-product .card .card-body{
+    margin-top: 10px;
+}
+.info-product .card .card-body #comment{
+    margin-left: 20px;
+}
+.info-product .card .card-body #comment p{
+    cursor: pointer;
+    font-size: 18px;
+}
+.info-product .card .card-body .comment{
+    display: none;
+}

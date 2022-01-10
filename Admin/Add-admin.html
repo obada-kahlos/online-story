@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add Admin</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="d-flex" id="wrapper">
+
+
+        <div class="border-right text-white" id="sidebar-wrapper">
+            <div class="sidebar-heading">Admin</div>
+            <div class="list-group list-group-flush">
+                <a href="main-interfacce.html" class="list-group-item">Main</a>
+                <a href="Add-Company.html" class="list-group-item">Add-Company</a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg  border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <i class="fa fa-list fa-lg"></i>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> <i class="fa fa-home fa-lg"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="form">
+                <form class="sing-up" name="singup" onsubmit="return matchpass()">
+
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="form-control" id="usr" placeholder="Admin Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passone" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passtow" placeholder="Confirm Password" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label> <input type="checkbox" id="" name=""> Add-Admin </label><br>
+                    <label> <input type="checkbox" id="" name=""> Del-Admin </label><br>
+                    <label> <input type="checkbox" id="" name=""> Add-Company </label><br>
+                    <label> <input type="checkbox" id="" name=""> del-Company </label><br>
+                   
+                
+                    <button type="submit" class="btn btn-info btn-block"> Add-admin </button>
+
+                </form>
+            </div>
+
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+
+        function matchpass(){  
+            var firstpassword = document.singup.passone.value;  
+            var secondpassword = document.singup.passtow.value;  
+            
+            if(firstpassword===secondpassword){  
+                return true;  
+            }  
+            else{  
+                alert("password must be same!");  
+                return false;  
+            }  
+        }  
+    </script>
+</body>
+
+</html>
+
+
+

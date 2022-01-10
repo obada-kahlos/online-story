@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add product</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleSalesman.css">
+</head>
+
+<body>
+
+
+        <div class="d-flex" id="wrapper">
+
+
+            <div class="border-right text-white" id="sidebar-wrapper">
+                <div class="sidebar-heading">Company</div>
+                <div class="list-group list-group-flush">
+                    <a href="Homepage.html" class="list-group-item">Info</a>
+                    <a href="Add-product.html" class="list-group-item">Add-product</a>
+                    <a href="Add-ofares.html" class="list-group-item">Add-Ofares</a>
+                    <a href="Add-wearehose.html" class="list-group-item">Add-wearehose</a>
+                </div>
+            </div>
+
+            <div id="page-content-wrapper">
+
+                <nav class="navbar navbar-expand-lg  border-bottom">
+                    <button class="btn btn-primary" id="menu-toggle">
+                    <i class="fa fa-list fa-lg"></i>
+                </button>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> <i class="fa fa-home fa-lg"></i> Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="form">
+                    <form class="Add">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nmae-product" name="text" placeholder="Product Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="text" name="text" placeholder="Type" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Price" name="text" placeholder="Price The Product" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" cols="4" required> Description </textarea>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose Photo</label>
+                        </div>
+                        <button type="submit" class="btn btn-info mr-auto"> Add product </button> 
+                    </form>
+                </div>
+
+
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="Salesman.js"></script>
+</body>
+
+</html>

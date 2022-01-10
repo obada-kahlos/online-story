@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cart</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="main-interface.css">
+</head>
+<body>
+
+
+    <!-- start nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span>Galaxy</span><span>Market</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link " href="main-interface.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active  " href="#">cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>   
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- end nav bar -->
+
+    <main>
+        <div class="container">
+            <!-- /Section cart -->
+            <section class="section my-5 pb-5">
+                <div class="card card-ecommerce">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table product-table">
+                                <thead class="mdb-color">
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            <strong>Product</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Color</strong>
+                                        </th>
+                                        <th></th>
+                                        <th>
+                                            <strong>Price</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Amount</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Buy</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Remove</strong>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <img src="../image/card1.jpg" alt="" class="img-fluid z-depth-0">
+                                        </th>
+                                        <td>
+                                            <h5 class="mt-3">
+                                                <strong>iPhone</strong>
+                                            </h5>
+                                            <p class="text-muted">Apple</p>
+                                        </td>
+                                        <td>White</td>
+                                        <td></td>
+                                        <td>$800</td>
+                                        <td>
+                                            <strong>2</strong>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger" >+</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-primary">X</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <img src="../image/card2.jpg" alt="" class="img-fluid z-depth-0">
+                                        </th>
+                                        <td>
+                                            <h5 class="mt-3">
+                                                <strong>Headphones</strong>
+                                            </h5>
+                                            <p class="text-muted">Sony</p>
+                                        </td>
+                                        <td>Red</td>
+                                        <td></td>
+                                        <td>$200</td>
+                                        <td>
+                                            <strong>2</strong>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger" >+</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-primary" >X</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <img src="../image/card3.jpg" alt="" class="img-fluid z-depth-0">
+                                        </th>
+                                        <td>
+                                            <h5 class="mt-3">
+                                                <strong>iPad Pro</strong>
+                                            </h5>
+                                            <p class="text-muted">Apple</p>
+                                        </td>
+                                        <td>Gold</td>
+                                        <td></td>
+                                        <td>$600</td>
+                                        <td>
+                                            <strong>4</strong>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger" >+</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-primary" >X</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td>
+                                            <h4 class="mt-2">
+                                                <strong>Total</strong>
+                                            </h4>
+                                        </td>
+                                        <td class="text-right">
+                                            <h4 class="mt-2">
+                                                <strong>$2600</strong>
+                                            </h4>
+                                        </td>
+                                        <td colspan="3" class="text-right">
+                                            <button type="button" class="btn btn-primary btn-rounded">Complete purchase <i class="fa fa-angle-right"></i> </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section cart -->
+
+
+            <!-- Section products -->
+            <section>
+                <h4 class="font-weight-bold mt-4 title-1">
+                    <strong>YOU MAY BE INTERESTED IN</strong>
+                </h4>
+                <hr class="yellow mb-5">
+
+                <div class="row mb-3">
+                    <div class="col-lg-3 col-md-6 col-xs-6 mb-4">
+                        <div class="card card-ecommerce">
+                            <div class="view overlay">
+                                <img src="../image/card7.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">
+                                    <strong>
+                                        <a href="" class="dark-grey-text">Sony D74v</a>
+                                    </strong>
+                                </h5>
+                                <span class="badge badge-info mb-2">new</span>
+                                <div class="rating">
+                                    <ul id="stars" class="list-unstyled">
+                                        <li class="star" data-value='1' title="poor">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='2' title="bad">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='3' title="Good">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='4' title="Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='5' title="very Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer pb-0">
+                                    <div class="row mb-0">
+                                        <span class="float-left">
+                                                <strong>1439$</strong>
+                                        </span>
+                                        <span class="float-right">
+                                            <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                                <i class="fa fa-shopping-cart ml-2"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-ecommerce">
+                            <div class="view overlay">
+                                <img src="../image/card6.png" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">
+                                    <strong>
+                                        <a href="" class="dark-grey-text">Samsung V54</a>
+                                    </strong>
+                                </h5>
+                                <span class="badge badge-info mb-2">new</span>
+                                <div class="rating">
+                                    <ul id="stars" class="list-unstyled">
+                                        <li class="star" data-value='1' title="poor">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='2' title="bad">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='3' title="Good">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='4' title="Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='5' title="very Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer pb-0">
+                                    <div class="row mb-0">
+                                        <span class="float-left">
+                                            <strong>1439$</strong>
+                                        </span>
+                                        <span class="float-right">
+                                            <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                                <i class="fa fa-shopping-cart ml-2"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-ecommerce">
+                            <div class="view overlay">
+                                <img src="../image/card5.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">
+                                    <strong>
+                                        <a href="" class="dark-grey-text">Dell 786i</a>
+                                    </strong>
+                                </h5>
+                                <span class="badge badge-info mb-2">new</span>
+                                <div class="rating">
+                                    <ul id="stars" class="list-unstyled">
+                                        <li class="star" data-value='1' title="poor">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='2' title="bad">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='3' title="Good">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='4' title="Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='5' title="very Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer pb-0">
+                                    <div class="row mb-0">
+                                        <span class="float-left">
+                                            <strong>1439$</strong>
+                                        </span>
+                                        <span class="float-right">
+                                            <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                                <i class="fa fa-shopping-cart ml-2"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+
+                        <div class="card card-ecommerce">
+
+                            <div class="view overlay">
+                                <img src="../image/card4.jpg" class="img-fluid" alt="">
+                                <a>
+                                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">
+                                    <strong>
+                                        <a href="" class="dark-grey-text">Canon 675-D</a>
+                                    </strong>
+                                </h5>
+                                <span class="badge badge-info mb-2">new</span>
+                                <span class="badge badge-success mb-2 ml-2">SALE</span>
+                                <!-- Rating -->
+                                <div class="rating">
+                                    <ul id="stars" class="list-unstyled">
+                                        <li class="star" data-value='1' title="poor">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='2' title="bad">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='3' title="Good">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='4' title="Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                        <li class="star" data-value='5' title="very Excellent">
+                                            <i class="fa fa-star fa-lg"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Card footer-->
+                                <div class="card-footer pb-0">
+                                    <div class="row mb-0">
+                                        <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
+                                            <span class="red-text">
+                                            <strong>$1199</strong>
+                                            </span>
+                                            <span class="grey-text">
+                                                <small>
+                                                <s>$1520</s>
+                                                </small>
+                                            </span>
+                                        </h5>
+
+                                        <span class="float-right">
+                                            <a class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                                                <i class="fa fa-shopping-cart ml-2"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main> 
+
+
+    <div class="footer-copyright py-3 text-center">
+        <div class="container-fluid">
+            © 2019 Copyright: <a href="#" target="_blank" style="color: #4285f4;">OBADA KAHLOUS </a>
+        </div>
+    </div>
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/jquery.nicescroll.js"></script>
+    <script src="main-interface.js"></script>
+    
+</body>
+</html>

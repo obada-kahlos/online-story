@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <link rel="stylesheet" href="../bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap 4/css/swiper-bundle.min.css">    
+    <link rel="stylesheet" href="search.css">    
+    <link rel="stylesheet" href="main-interface.css">
+    
+</head>
+<body >
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>Galaxy</span><span>Market</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="main-interface.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html">cart</a>
+                </li>
+                
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fillter-page">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 fillter">
+                    <div class="card">
+                        <div class="card-header">Fillter Your Product</div>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1" style="cursor:pointer;"><i class="fa fa-search fa-x5" ></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h5 class="title">Brands </h5>
+                            <form>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <span class="form-check-label">
+                                        Samsung
+                                        </span>
+                                    </label> 
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <span class="form-check-label">
+                                        Apple
+                                        </span>
+                                    </label>  
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <span class="form-check-label">
+                                        Another Brand
+                                        </span>
+                                    </label>  
+                                
+                                
+                                <h5 class="card-title"> Choose type</h5>
+                                <div class="filter-content">
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                        <span class="form-check-label">
+                                        TV
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                        <span class="form-check-label">
+                                        LapTop
+                                        </span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                                        <span class="form-check-label">
+                                        Mobile
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <h5 class="card-title"> Choose Color </h5>
+
+                                <div class="filter-content">
+                                    <label class="btn btn-danger">
+                                        <input class="" type="checkbox" name="myradio" value="">
+                                        <span class="form-check-label">Red</span>
+                                    </label>
+                                    <label class="btn btn-success">
+                                        <input class="" type="checkbox" name="myradio" value="">
+                                        <span class="form-check-label">Green</span>
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input class="" type="checkbox" name="myradio" value="">
+                                        <span class="form-check-label">Blue</span>
+                                    </label>
+                                </div>
+
+                                <h5 class="card-title"> Price </h5>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <input type="number" class="form-control" id="inputEmail4" placeholder="$0">
+                                    </div>
+                                    <div class="form-group col-md-6 text-right">
+                                        <label>Max</label>
+                                        <input type="number" class="form-control" placeholder="$1,0000">
+                                    </div>
+                                </div>
+
+                                
+
+                                <button type="submit" class="btn btn-success btn-block">Fillter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 product">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <input type="checkbox" class="from-control pull-right" id="" >
+                                </div>
+                                <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                                <div class="body">
+                                    <h4 class="card-title">product name</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                                    <p class="card-text">Some quick example text to build on the product name</p>
+                                    <div class="rating">
+                                        <ul id="stars" class="list-unstyled">
+                                            <li class="star" data-value='1' title="poor">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='2' title="bad">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='3' title="Good">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='4' title="Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='5' title="very Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                        <a href="info-product.html" class="card-link info-product">Info</a>  
+                                    </div>  
+                                     
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                                <div class="card-header">
+                                    <input type="checkbox" class="from-control pull-right" id="" >
+                                </div>
+                                <div class="body">
+                                    <h4 class="card-title">product name</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                                    <p class="card-text">Some quick example text to build on the product name</p>
+                                    <div class="rating">
+                                        <ul id="stars" class="list-unstyled">
+                                            <li class="star" data-value='1' title="poor">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='2' title="bad">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='3' title="Good">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='4' title="Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='5' title="very Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                        <a href="info-product.html" class="card-link info-product">Info</a>  
+                                    </div> 
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <input type="checkbox" class="from-control pull-right" id="" >
+                                </div>
+                                <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                                <div class="body">
+                                    <h4 class="card-title">product name</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                                    <p class="card-text">Some quick example text to build on the product name</p>
+                                    <div class="rating">
+                                        <ul id="stars" class="list-unstyled">
+                                            <li class="star" data-value='1' title="poor">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='2' title="bad">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='3' title="Good">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='4' title="Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='5' title="very Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                        <a href="info-product.html" class="card-link info-product">Info</a>  
+                                    </div>
+                                       
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <input type="checkbox" class="from-control pull-right" id="" >
+                                </div>
+                                <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                                <div class="body">
+                                    <h4 class="card-title">product name</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                                    <p class="card-text">Some quick example text to build on the product name</p>
+                                    <div class="rating">
+                                        <ul id="stars" class="list-unstyled">
+                                            <li class="star" data-value='1' title="poor">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='2' title="bad">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='3' title="Good">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='4' title="Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                            <li class="star" data-value='5' title="very Excellent">
+                                                <i class="fa fa-star fa-lg"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                        <a href="info-product.html" class="card-link info-product">Info</a>  
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!-- Comparison -->
+    <div class="Comparison">
+        <div class="container">
+            <h3 class="text-center">Comparison<span>.</span> </h3>
+            <p class="text-center text">Option At First Prouduct More Than Tow Products , it is Same Kind</p>
+            <p class="text-center text"> And press The Comparison Button <button type="submit" class="btn btn-info text-center">Comparison</button> </p>
+            
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="card">
+
+                        <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                        <div class="body">
+                            <h4 class="card-title">product name</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                            <p class="card-text">Some quick example text to build on the product name</p>
+                            <div class="rating">
+                                <ul id="stars" class="list-unstyled">
+                                    <li class="star" data-value='1' title="poor">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='2' title="bad">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='3' title="Good">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='4' title="Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='5' title="very Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                <a href="info-product.html" class="card-link info-product">Info</a>  
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                        <div class="body">
+                            <h4 class="card-title">product name</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                            <p class="card-text">Some quick example text to build on the product name</p>
+                            <div class="rating">
+                                <ul id="stars" class="list-unstyled">
+                                    <li class="star" data-value='1' title="poor">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='2' title="bad">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='3' title="Good">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='4' title="Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='5' title="very Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                <a href="info-product.html" class="card-link info-product">Info</a>  
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../image/card1.jpg" alt="Card image cap">
+                        <div class="body">
+                            <h4 class="card-title">product name</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">123000 <span>S.P</span></h6>
+                            <p class="card-text">Some quick example text to build on the product name</p>
+                            <div class="rating">
+                                <ul id="stars" class="list-unstyled">
+                                    <li class="star" data-value='1' title="poor">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='2' title="bad">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='3' title="Good">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='4' title="Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                    <li class="star" data-value='5' title="very Excellent">
+                                        <i class="fa fa-star fa-lg"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link Add-to-cart">Add To Card</a>
+                                <a href="info-product.html" class="card-link info-product">Info</a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+     <!-- start footer -->
+
+     <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <h2>Galaxy<span style="color: #f4b900;">Market</span></h2>
+                        <p class="p">Before we talk destination, we shine a spotlight across your organization to fully understand its people, processes</p>
+                        <div class="footer-info">
+                            <h4>
+                                <i class="fa fa-map-marker"></i> Postal Address:
+                            </h4>
+    
+                            <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                            <h4>>
+                                <i class="fa fa-phone"></i>Business Phone:
+                            </h4>
+                            <a href="#">
+                                <p>+963- 0997-741-497</p>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 col-xs-6">
+                        <h2>TOP RATED <span style="color: #f4b900;">PRODUCTS</span></h2>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card7.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5>£125.00</h5>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card5.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5>£125.00</h5>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card4.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5><del>£109.00  </del> £125.00</h5>
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 col-xs-6">
+                        <h2>OUr <span style="color: #f4b900;">PRODUCTS</span></h2>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card3.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5>£125.00</h5>
+                            </div>
+                        </div>
+    
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card2.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5>£125.00</h5>
+                            </div>
+                        </div>
+    
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="../image/card1.jpg" width="80px" height="80px">
+                            </a>
+                            <div class="media-body">
+                                <h4>Creator Of Quality</h4>
+                                <h5><del>£109.00  </del> £125.00</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 col-xs-12">
+                        <h2>TOP RATED <span>PRODUCTS</span></h2>
+                        <ul class="footer-gallery">
+                            <li>
+                                <a href="#"><img src="../image/gallery-1.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../image/gallery-2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../image/gallery-3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../image/gallery-4.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../image/gallery-5.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../image/gallery-6.png" alt=""></a>
+                            </li>
+    
+                        </ul>
+                        <a href="#" class="view"><i class="fa fa-arrow-circle-o-right"></i>View More images</a>
+                        <h6>Subscribe to rss</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type your email">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-rss" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <h4 class="f-text"> Copyright © 2020 . Powered By <span style="color:#f4b900 ;">Obada Kahlous</h4></span>
+            </div>
+            <div id="scroolup">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </div>
+
+
+
+    <script src="../bootstrap 4/js/jquery-3.5.1.js"></script>
+    <script src="../bootstrap 4/js/popper.min.js"></script>
+    <script src="../bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="../bootstrap 4/js/swiper-bundle.min.js"></script>
+    <script src="../bootstrap 4/js/jquery.nicescroll.js"></script>
+    <script src="main-interface.js"></script>
+</body>
+</html>

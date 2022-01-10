@@ -1,0 +1,55 @@
+
+/* start card */
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.product-table img {
+    max-height: 150px;
+    min-width: 50px;
+}
+.product-table thead{
+    background-color: #d0d6e2
+}
+.card-footer {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+.rating ul {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0;
+}
+
+.rating ul>li.star {
+    display: inline-block;
+}
+
+.rating ul>li.star>i.fa {
+    color: #ccc;
+}
+
+.rating ul>li.star.hover>i.fa {
+    color: #f8d249;
+}
+
+.rating ul>li.star.selected>i.fa {
+    color: #fac70f;
+}
+
+
+/*     end card   */
+
+.footer-copyright {
+    overflow: hidden;
+    background-color: #333;
+    color: rgba(255, 255, 255, .6);
+}

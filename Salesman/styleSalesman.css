@@ -1,0 +1,151 @@
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin .25s ease-out;
+    background-color: #333;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+.navbar {
+    background-color: #33b5e5;
+    color: #fff;
+}
+
+.list-group-flush .list-group-item {
+    border-bottom: 1px solid #fff;
+    background-color: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.list-group-flush .list-group-item i {
+    color: rebeccapurple;
+    transition: all 0.4s ease-in-out;
+}
+
+.list-group-flush .list-group-item i:hover {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.list-group-item:hover {
+    text-decoration: none;
+    background-color: #555;
+    color: #33b5e5;
+}
+
+.list-group-flush a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link:before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 25%;
+    border-bottom: 3px solid #fff;
+    transform: scaleY(3);
+    transition: .5s;
+    opacity: 0;
+}
+
+.navbar-nav .nav-link:hover:before {
+    transform: scaleY(1.1);
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.navbar-nav .nav-link:hover:after {
+    transform: scale(1);
+}
+
+
+/*        add company               */
+
+.form {
+    width: 80%;
+    margin: 20px auto;
+}
+
+form.Add {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+form.Add button{
+    margin-top: 10px;
+}
+
+/*************************  home page *****************************/
+.my-product{
+    margin-top: 40px;
+}
+.my-product .card{
+    margin-bottom: 20px;
+}
+form .formmodal{
+    border: none;
+    box-shadow: none;
+}
